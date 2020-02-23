@@ -12,6 +12,8 @@ File Encoding         : 65001
 
 Date: 2019-03-21 15:44:19
 */
+-- Mysql中如果表和表之间建立的外键约束，则无法删除表及修改表结构。
+-- 解决方法是在Mysql中取消外键约束:  SET FOREIGN_KEY_CHECKS=0; 
 
 SET FOREIGN_KEY_CHECKS=0;
 
